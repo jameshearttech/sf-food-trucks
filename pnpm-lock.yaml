@@ -29,6 +29,12 @@ importers:
       husky:
         specifier: 9.0.11
         version: 9.0.11
+      prettier:
+        specifier: 3.3.2
+        version: 3.3.2
+      prettier-config:
+        specifier: workspace:*
+        version: link:tools/prettier
 
   applications/cli: {}
 

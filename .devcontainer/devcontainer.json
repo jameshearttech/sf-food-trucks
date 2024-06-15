@@ -6,6 +6,7 @@
           // If we have an extension foo.bar with version v1.0.0 then we pin the version like this:
           // "foo.bar@1.0.0",
           "eamodio.gitlens",
+          "esbenp.prettier-vscode",
           "joshbolduc.commitlint"
         ]
       }

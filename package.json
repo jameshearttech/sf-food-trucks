@@ -10,7 +10,9 @@
     "fresh": "pnpm clean && pnpm install",
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
     "prepare": "husky",
-    "commitlint": "commitlint"
+    "commitlint": "commitlint",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write"
   },
   "author": "James Ringer <james@ihearttech.net>",
   "license": "MIT",
@@ -22,6 +24,8 @@
     "@commitlint/parse": "19.0.3",
     "commitlint-config": "workspace:*",
     "conventional-changelog-conventionalcommits": "8.0.0",
-    "husky": "9.0.11"
+    "husky": "9.0.11",
+    "prettier": "3.3.2",
+    "prettier-config": "workspace:*"
   }
 }

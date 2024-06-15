@@ -1,5 +1,20 @@
 {
     "commitlint.config.file": "commitlint.config.mjs",
     "commitlint.log.enabled": true,
-    "files.eol": "\n"
+    "css.format.enable": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "html.format.enable": false,
+    "javascript.format.enable": false,
+    "less.format.enable": false,
+    "prettier.configPath": "prettier.config.mjs",
+    "prettier.endOfLine": "lf",
+    "prettier.ignorePath": ".prettierignore",
+    "prettier.requireConfig": true,
+    "scss.format.enable": false,
+    "typescript.format.enable": false,
+    "typescript.tsserver.log": "normal",
+    "typescript.tsserver.nodePath": "/usr/local/bin/node"
 }
