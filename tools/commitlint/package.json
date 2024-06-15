@@ -1,0 +1,39 @@
+{
+  "name": "commitlint-config",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "private": true,
+  "description": "Commitlint configuration.",
+  "author": "James Ringer <james@ihearttech.net>",
+  "repository": {
+    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "type": "git",
+    "directory": "tools/commitlint"
+  },
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "clean": "rimraf \"**/node_modules\"",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "commitlint": "commitlint"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "19.2.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/lint": "19.2.2",
+    "@commitlint/load": "19.2.0",
+    "@commitlint/parse": "19.0.3",
+    "conventional-changelog-conventionalcommits": "8.0.0"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/lint": "19.2.2",
+    "@commitlint/load": "19.2.0",
+    "@commitlint/parse": "19.0.3",
+    "conventional-changelog-conventionalcommits": "8.0.0"
+  }
+}
