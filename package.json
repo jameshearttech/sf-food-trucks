@@ -12,7 +12,9 @@
     "prepare": "husky",
     "commitlint": "commitlint",
     "prettier:check": "prettier *.* **/*.* --check",
-    "prettier:fix": "prettier *.* **/*.* --write"
+    "prettier:fix": "prettier *.* **/*.* --write",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix"
   },
   "author": "James Ringer <james@ihearttech.net>",
   "license": "MIT",
@@ -24,6 +26,8 @@
     "@commitlint/parse": "19.0.3",
     "commitlint-config": "workspace:*",
     "conventional-changelog-conventionalcommits": "8.0.0",
+    "eslint": "9.5.0",
+    "eslint-config": "workspace:*",
     "husky": "9.0.11",
     "prettier": "3.3.2",
     "prettier-config": "workspace:*"
