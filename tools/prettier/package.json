@@ -1,0 +1,30 @@
+{
+  "name": "prettier-config",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "private": true,
+  "description": "Prettier configuration.",
+  "author": "James Ringer <james@ihearttech.net>",
+  "repository": {
+    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "type": "git",
+    "directory": "tools/prettier"
+  },
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "clean": "rimraf \"**/node_modules\"",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "commitlint": "commitlint",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write"
+  },
+  "devDependencies": {
+    "prettier": "3.3.2"
+  },
+  "peerDependencies": {
+    "prettier": "3.3.2"
+  }
+}
