@@ -1,0 +1,16 @@
+{
+  "name": "sf-food-trucks",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "private": true,
+  "description": "These projects strive to help manage our food truck habit using the San Francisco food truck dataset.",
+  "scripts": {
+    "clean": "rimraf \"**/node_modules\"",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh"
+  },
+  "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
+  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
+}

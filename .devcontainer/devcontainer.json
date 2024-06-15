@@ -1,0 +1,15 @@
+{
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          // This is an example of how to pin an extension version. Note you must drop the 'v'.
+          // If we have an extension foo.bar with version v1.0.0 then we pin the version like this:
+          // "foo.bar@1.0.0",
+          "eamodio.gitlens"
+        ]
+      }
+    },
+    "image": "sf-food-trucks:v1.0.0",
+    "runArgs": ["--network=host", "--dns=8.8.8.8"],
+    "privileged": true
+}
