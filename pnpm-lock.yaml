@@ -8,6 +8,24 @@ importers:
 
   .:
     devDependencies:
+      '@commitlint/cli':
+        specifier: 19.3.0
+        version: 19.3.0(@types/node@20.14.2)(typescript@5.4.5)
+      '@commitlint/lint':
+        specifier: 19.2.2
+        version: 19.2.2
+      '@commitlint/load':
+        specifier: 19.2.0
+        version: 19.2.0(@types/node@20.14.2)(typescript@5.4.5)
+      '@commitlint/parse':
+        specifier: 19.0.3
+        version: 19.0.3
+      commitlint-config:
+        specifier: workspace:*
+        version: link:tools/commitlint
+      conventional-changelog-conventionalcommits:
+        specifier: 8.0.0
+        version: 8.0.0
       husky:
         specifier: 9.0.11
         version: 9.0.11

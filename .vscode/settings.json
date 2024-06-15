@@ -1,3 +1,5 @@
 {
-    "files.eol": "\n",
+    "commitlint.config.file": "commitlint.config.mjs",
+    "commitlint.log.enabled": true,
+    "files.eol": "\n"
 }

@@ -22,7 +22,7 @@ Create a commitlint [configuration file](https://github.com/conventional-changel
 import 'conventional-changelog-conventionalcommits';
 
 // This import/export is used by the commitlint-cli package.
-import baseConfig from '@integris/commitlint';
+import baseConfig from 'commitlint-config';
 export default baseConfig;
 ```
 
