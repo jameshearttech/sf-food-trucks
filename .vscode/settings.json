@@ -25,6 +25,7 @@
   "prettier.endOfLine": "lf",
   "prettier.ignorePath": ".prettierignore",
   "prettier.requireConfig": true,
+  "remark.requireConfig": true,
   "scss.format.enable": false,
   "typescript.format.enable": false,
   "typescript.tsserver.log": "normal",

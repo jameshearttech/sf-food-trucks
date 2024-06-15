@@ -30,6 +30,8 @@
     "eslint-config": "workspace:*",
     "husky": "9.0.11",
     "prettier": "3.3.2",
-    "prettier-config": "workspace:*"
+    "prettier-config": "workspace:*",
+    "remark-cli": "12.0.1",
+    "remark-config": "workspace:*"
   }
 }
