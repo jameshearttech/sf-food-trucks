@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "private": true,
+  "description": "ESLint configuration.",
+  "author": "James Ringer <james@ihearttech.net>",
+  "repository": {
+    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "type": "git",
+    "directory": "tools/eslint"
+  },
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "clean": "rimraf \"**/node_modules\"",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "commitlint": "commitlint",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix"
+  },
+  "devDependencies": {
+    "eslint": "9.5.0"
+  },
+  "peerDependencies": {
+    "eslint": "9.5.0"
+  },
+  "dependencies": {
+    "@eslint/js": "9.5.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.1.3",
+    "globals": "15.4.0"
+  }
+}
