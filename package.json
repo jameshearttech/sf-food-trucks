@@ -29,6 +29,8 @@
     "eslint": "9.5.0",
     "eslint-config": "workspace:*",
     "husky": "9.0.11",
+    "lint-staged": "15.2.7",
+    "lint-staged-config": "workspace:*",
     "prettier": "3.3.2",
     "prettier-config": "workspace:*",
     "remark-cli": "12.0.1",

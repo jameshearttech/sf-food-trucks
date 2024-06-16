@@ -35,6 +35,12 @@ importers:
       husky:
         specifier: 9.0.11
         version: 9.0.11
+      lint-staged:
+        specifier: 15.2.7
+        version: 15.2.7
+      lint-staged-config:
+        specifier: workspace:*
+        version: link:tools/lint-staged
       prettier:
         specifier: 3.3.2
         version: 3.3.2
