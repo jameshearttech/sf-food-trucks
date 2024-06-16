@@ -53,6 +53,12 @@ importers:
       remark-config:
         specifier: workspace:*
         version: link:tools/remark
+      syncpack:
+        specifier: 12.3.2
+        version: 12.3.2(typescript@5.4.5)
+      syncpack-config:
+        specifier: workspace:*
+        version: link:tools/syncpack
 
   applications/cli: {}
 
