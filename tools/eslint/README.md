@@ -2,6 +2,8 @@
 
 [eslint](https://github.com/eslint/eslint/)
 
+Support for ESLint 9 was added in typescript-eslint@8.0.0-alpha.10.
+
 ## Installation
 
 Use the package manager [pnpm](https://pnpm.io/) to install the ESLint configuration and related packages in the root project.
@@ -16,7 +18,7 @@ pnpm add --save-dev --save-exact --workspace-root eslint
 Create an eslint [configuration file](https://eslint.org/docs/latest/use/configure/configuration-files) in ES module format. Import the configuration from eslint-config and export as default.
 
 ```javascript
-import eslintConfig from "eslint-config";
+import eslintConfig from 'eslint-config';
 export default [...eslintConfig];
 ```
 
