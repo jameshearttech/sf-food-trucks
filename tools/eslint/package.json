@@ -6,6 +6,7 @@
   "private": true,
   "description": "ESLint configuration.",
   "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/jameshearttech/sf-food-trucks",
     "type": "git",
@@ -21,7 +22,10 @@
     "prettier:check": "prettier *.* **/*.* --check",
     "prettier:fix": "prettier *.* **/*.* --write",
     "eslint:check": "eslint",
-    "eslint:fix": "eslint --fix"
+    "eslint:fix": "eslint --fix",
+    "remark:check": "remark .",
+    "remark:fix": "remark . --output",
+    "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
   "devDependencies": {
     "eslint": "9.5.0"
