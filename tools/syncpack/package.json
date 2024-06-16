@@ -6,6 +6,7 @@
   "private": true,
   "description": "Syncpack configuration.",
   "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/jameshearttech/sf-food-trucks",
     "type": "git",
