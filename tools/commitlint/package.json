@@ -6,6 +6,7 @@
   "private": true,
   "description": "Commitlint configuration.",
   "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/jameshearttech/sf-food-trucks",
     "type": "git",
@@ -17,7 +18,14 @@
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm install",
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
-    "commitlint": "commitlint"
+    "commitlint": "commitlint",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix",
+    "remark:check": "remark .",
+    "remark:fix": "remark . --output",
+    "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
   "dependencies": {
     "@commitlint/config-conventional": "19.2.2"
