@@ -6,6 +6,7 @@
   "private": true,
   "description": "Lint-staged configuration.",
   "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/jameshearttech/sf-food-trucks",
     "type": "git",
@@ -23,7 +24,8 @@
     "eslint:check": "eslint",
     "eslint:fix": "eslint --fix",
     "remark:check": "remark .",
-    "remark:fix": "remark . --output"
+    "remark:fix": "remark . --output",
+    "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
   "devDependencies": {
     "lint-staged": "15.2.7"
