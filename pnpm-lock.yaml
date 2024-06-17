@@ -176,6 +176,15 @@ importers:
         specifier: 12.3.2
         version: 12.3.2(typescript@5.4.5)
 
+  tools/typescript:
+    devDependencies:
+      '@types/node':
+        specifier: 20.14.2
+        version: 20.14.2
+      typescript:
+        specifier: 5.4.5
+        version: 5.4.5
+
 packages:
 
   '@babel/code-frame@7.24.7':

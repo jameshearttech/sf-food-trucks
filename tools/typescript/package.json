@@ -1,0 +1,38 @@
+{
+  "name": "typescript-config",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "private": true,
+  "description": "Typescript configuration.",
+  "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "type": "git",
+    "directory": "tools/typescript"
+  },
+  "type": "module",
+  "main": "tsconfig.json",
+  "scripts": {
+    "clean": "rimraf \"**/node_modules\"",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "commitlint": "commitlint",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix",
+    "remark:check": "remark .",
+    "remark:fix": "remark . --output",
+    "syncpack:fix": "syncpack fix-mismatches && syncpack format"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.2",
+    "typescript": "5.4.5"
+  },
+  "peerDependencies": {
+    "@types/node": "20.14.2",
+    "typescript": "5.4.5"
+  }
+}
