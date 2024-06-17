@@ -27,6 +27,7 @@
     "@commitlint/lint": "19.2.2",
     "@commitlint/load": "19.2.0",
     "@commitlint/parse": "19.0.3",
+    "@types/node": "20.14.2",
     "commitlint-config": "workspace:*",
     "conventional-changelog-conventionalcommits": "8.0.0",
     "eslint": "9.5.0",
@@ -39,6 +40,8 @@
     "remark-cli": "12.0.1",
     "remark-config": "workspace:*",
     "syncpack": "12.3.2",
-    "syncpack-config": "workspace:*"
+    "syncpack-config": "workspace:*",
+    "typescript": "5.4.5",
+    "typescript-config": "workspace:*"
   }
 }

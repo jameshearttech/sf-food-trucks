@@ -20,6 +20,9 @@ importers:
       '@commitlint/parse':
         specifier: 19.0.3
         version: 19.0.3
+      '@types/node':
+        specifier: 20.14.2
+        version: 20.14.2
       commitlint-config:
         specifier: workspace:*
         version: link:tools/commitlint
@@ -59,8 +62,12 @@ importers:
       syncpack-config:
         specifier: workspace:*
         version: link:tools/syncpack
-
-  applications/cli: {}
+      typescript:
+        specifier: 5.4.5
+        version: 5.4.5
+      typescript-config:
+        specifier: workspace:*
+        version: link:tools/typescript
 
   tools/commitlint:
     dependencies:
