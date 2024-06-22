@@ -1,10 +1,18 @@
 {
   "name": "sf-food-trucks",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "restricted"
   },
   "private": true,
   "description": "These projects strive to help manage our food truck habit using the San Francisco food truck dataset.",
+  "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
+  "repository": {
+    "directory": "/",
+    "type": "git",
+    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git"
+  },
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm install",
@@ -19,9 +27,6 @@
     "remark:fix": "remark . --output",
     "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
-  "author": "James Ringer <james@ihearttech.net>",
-  "license": "MIT",
-  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631",
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/lint": "19.2.2",
@@ -45,13 +50,8 @@
     "typescript": "5.4.5",
     "typescript-config": "workspace:*"
   },
-  "version": "1.0.0",
-  "repository": {
-    "directory": "/",
-    "type": "git",
-    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git"
-  },
   "engines": {
     "node": "^22.2.0"
-  }
+  },
+  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
 }

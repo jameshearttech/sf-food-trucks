@@ -1,5 +1,6 @@
 {
   "name": "typescript-config",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "restricted"
   },
@@ -12,21 +13,21 @@
     "type": "git",
     "directory": "tools/typescript"
   },
-  "type": "module",
-  "main": "tsconfig.json",
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
-    "fresh": "pnpm clean && pnpm install",
-    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
     "commitlint": "commitlint",
-    "prettier:check": "prettier *.* **/*.* --check",
-    "prettier:fix": "prettier *.* **/*.* --write",
     "eslint:check": "eslint",
     "eslint:fix": "eslint --fix",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write",
     "remark:check": "remark .",
     "remark:fix": "remark . --output",
     "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
+  "type": "module",
+  "main": "tsconfig.json",
   "devDependencies": {
     "@types/node": "20.14.2",
     "typescript": "5.4.5"
@@ -35,7 +36,6 @@
     "@types/node": "20.14.2",
     "typescript": "5.4.5"
   },
-  "version": "1.0.0",
   "engines": {
     "node": "^22.2.0"
   }

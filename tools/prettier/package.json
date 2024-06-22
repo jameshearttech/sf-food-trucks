@@ -1,5 +1,6 @@
 {
   "name": "prettier-config",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "restricted"
   },
@@ -12,8 +13,6 @@
     "type": "git",
     "directory": "tools/prettier"
   },
-  "type": "module",
-  "main": "index.mjs",
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm install",
@@ -27,13 +26,14 @@
     "remark:fix": "remark . --output",
     "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
+  "type": "module",
+  "main": "index.mjs",
   "devDependencies": {
     "prettier": "3.3.2"
   },
   "peerDependencies": {
     "prettier": "3.3.2"
   },
-  "version": "1.0.0",
   "engines": {
     "node": "^22.2.0"
   }

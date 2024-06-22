@@ -1,5 +1,6 @@
 {
   "name": "remark-config",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "restricted"
   },
@@ -12,8 +13,6 @@
     "type": "git",
     "directory": "tools/remark"
   },
-  "type": "module",
-  "main": "index.mjs",
   "scripts": {
     "clean": "rimraf \"**/node_modules\"",
     "fresh": "pnpm clean && pnpm install",
@@ -27,6 +26,8 @@
     "remark:fix": "remark . --output",
     "syncpack:fix": "syncpack fix-mismatches && syncpack format"
   },
+  "type": "module",
+  "main": "index.mjs",
   "dependencies": {
     "remark-frontmatter": "5.0.0",
     "remark-lint-fenced-code-flag": "4.0.0",
@@ -49,7 +50,6 @@
     "remark": "15.0.1",
     "remark-cli": "12.0.1"
   },
-  "version": "1.0.0",
   "engines": {
     "node": "^22.2.0"
   }
