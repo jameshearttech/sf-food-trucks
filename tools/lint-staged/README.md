@@ -16,6 +16,7 @@ pnpm add --save-dev --save-exact --workspace-root lint-staged
 Create a lint-staged configuration file in ES module format. Import the configuration from lint-staged-config and export as default.
 
 ```javascript
+// Default to check in root project, but provide config to fix, too.
 import baseConfig from 'lint-staged-config';
 export default baseConfig;
 ```
