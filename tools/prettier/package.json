@@ -29,10 +29,10 @@
   "type": "module",
   "main": "index.mjs",
   "devDependencies": {
-    "prettier": "3.3.2"
+    "prettier": "~3.3.2"
   },
   "peerDependencies": {
-    "prettier": "3.3.2"
+    "prettier": "^3.3.2"
   },
   "engines": {
     "node": "^22.2.0"
