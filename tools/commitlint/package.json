@@ -8,7 +8,7 @@
   "author": "James Ringer <james@ihearttech.net>",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git",
     "type": "git",
     "directory": "tools/commitlint"
   },
@@ -43,5 +43,9 @@
     "@commitlint/load": "19.2.0",
     "@commitlint/parse": "19.0.3",
     "conventional-changelog-conventionalcommits": "8.0.0"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": "^22.2.0"
   }
 }

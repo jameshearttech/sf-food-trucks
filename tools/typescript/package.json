@@ -8,7 +8,7 @@
   "author": "James Ringer <james@ihearttech.net>",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git",
     "type": "git",
     "directory": "tools/typescript"
   },
@@ -34,5 +34,9 @@
   "peerDependencies": {
     "@types/node": "20.14.2",
     "typescript": "5.4.5"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": "^22.2.0"
   }
 }

@@ -44,5 +44,14 @@
     "syncpack-config": "workspace:*",
     "typescript": "5.4.5",
     "typescript-config": "workspace:*"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "directory": "/",
+    "type": "git",
+    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git"
+  },
+  "engines": {
+    "node": "^22.2.0"
   }
 }

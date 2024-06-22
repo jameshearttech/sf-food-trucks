@@ -8,7 +8,7 @@
   "author": "James Ringer <james@ihearttech.net>",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/jameshearttech/sf-food-trucks",
+    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git",
     "type": "git",
     "directory": "tools/prettier"
   },
@@ -32,5 +32,9 @@
   },
   "peerDependencies": {
     "prettier": "3.3.2"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": "^22.2.0"
   }
 }
