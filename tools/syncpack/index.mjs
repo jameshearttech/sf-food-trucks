@@ -10,7 +10,26 @@ export default {
         'pnpmOverrides',
         'local' // The workspace dependency type was renamed to local in syncpack 11.2.1.
     ],
-    semverGroups: [],
+    semverGroups: [
+        {
+            range: '',
+            dependencyTypes: ['prod', 'resolutions', 'overrides', 'pnpmOverrides', 'local'],
+            dependencies: ['**'],
+            packages: ['**']
+        },
+        {
+            range: '~',
+            dependencyTypes: ['dev'],
+            dependencies: ['**'],
+            packages: ['**']
+        },
+        {
+            range: '^',
+            dependencyTypes: ['peer'],
+            dependencies: ['**'],
+            packages: ['**']
+        }
+    ],
     semverRange: '^',
     sortAz: ['dependencies', 'devDependencies', 'peerDependencies'],
     sortFirst: [
