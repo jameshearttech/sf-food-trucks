@@ -1,0 +1,43 @@
+{
+  "name": "sf-food-trucks-cli",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "private": true,
+  "description": "San Francisco food trucks command-line application.",
+  "author": "James Ringer <james@ihearttech.net>",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/jameshearttech/sf-food-trucks.git",
+    "type": "git",
+    "directory": "applications/cli"
+  },
+  "scripts": {
+    "build": "pnpm tsc",
+    "clean": "rimraf \"**/node_modules\"",
+    "commitlint": "commitlint",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix",
+    "fresh": "pnpm clean && pnpm install",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "prettier:check": "prettier *.* **/*.* --check",
+    "prettier:fix": "prettier *.* **/*.* --write",
+    "remark:check": "remark .",
+    "remark:fix": "remark . --output",
+    "syncpack:fix": "syncpack fix-mismatches && syncpack format"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "axios": "1.7.2",
+    "commander": "12.1.0",
+    "csv-parse": "5.5.6",
+    "figlet": "1.7.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "~1.5.8",
+    "@types/node": "~20.14.2",
+    "typescript": "~5.4.5"
+  }
+}
