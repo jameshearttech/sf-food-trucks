@@ -10,4 +10,3 @@ This goal of this repository is to build software around the [peck engineering c
 - [prettier](tools/prettier/README.md)
 - [remark](tools/remark/README.md)
 - [syncpack](tools/syncpack/README.md)
-- [typescript](tools/typescript/README.md)
