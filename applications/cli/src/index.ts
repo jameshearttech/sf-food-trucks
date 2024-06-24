@@ -14,7 +14,7 @@ program
     .version('1.0.0')
     .description('San Francisco food trucks command-line application.')
     // Search food items for keywords (e.g., 'taco', 'gyro', 'pizza').
-    .option('-f, --food-items <value>', 'Search food items for keyword')
+    .option('-f, --food-items [value...]', 'Search food items for keyword')
     // Dataset values for status include 'REQUESTED', 'EXPIRED', 'SUSPEND', or 'APPROVED'.
     .option('-s, --status <value>', 'Permit status', 'APPROVED')
     // Dataset values for facility type include 'Push Cart', 'Truck', or ''.
@@ -32,10 +32,12 @@ async function downloadAndParseCsv(url: string): Promise<unknown[]> {
             .on('readable', function (this: Readable) {
                 let record;
                 while ((record = this.read())) {
-                    if (record.FoodItems.includes(options.foodItems)) {
-                        if (record.FacilityType === options.facilityType) {
-                            if (record.Status === options.status) {
-                                results.push(record);
+                    for (const foodItem of options.foodItems) {
+                        if (record.FoodItems.includes(foodItem)) {
+                            if (record.FacilityType === options.facilityType) {
+                                if (record.Status === options.status) {
+                                    results.push(record);
+                                }
                             }
                         }
                     }
