@@ -23,7 +23,11 @@ program
             .default('APPROVED')
     )
     // Dataset values for facility type include 'Push Cart', 'Truck', or ''.
-    .option('-t, --facility-type <value>', 'Facility type', 'Truck')
+    .addOption(
+        new Option('-t, --facility-type <value>', 'Facility type')
+            .choices(['Push Cart', 'Truck'])
+            .default('Truck')
+    )
     .parse(process.argv);
 
 const options = program.opts();
