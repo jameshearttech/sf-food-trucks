@@ -47,8 +47,7 @@
     "remark-config": "workspace:*",
     "syncpack": "~12.3.2",
     "syncpack-config": "workspace:*",
-    "typescript": "~5.4.5",
-    "typescript-config": "workspace:*"
+    "typescript": "~5.4.5"
   },
   "engines": {
     "node": "^22.2.0"
