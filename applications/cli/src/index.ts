@@ -1,5 +1,5 @@
 import figlet from 'figlet';
-import { Command } from 'commander';
+import { Command, Option } from 'commander';
 import { Readable } from 'stream';
 import axios from 'axios';
 import { parse } from 'csv-parse';
@@ -16,7 +16,12 @@ program
     // Search food items for keywords (e.g., 'taco', 'gyro', 'pizza').
     .requiredOption('-f, --food-items [value...]', 'Search food items for keyword')
     // Dataset values for status include 'REQUESTED', 'EXPIRED', 'SUSPEND', or 'APPROVED'.
-    .option('-s, --status <value>', 'Permit status', 'APPROVED')
+    // .option('-s, --status <value>', 'Permit status', 'APPROVED')
+    .addOption(
+        new Option('-s, --status <value>', 'Permit status')
+            .choices(['REQUESTED', 'EXPIRED', 'SUSPEND', 'APPROVED'])
+            .default('APPROVED')
+    )
     // Dataset values for facility type include 'Push Cart', 'Truck', or ''.
     .option('-t, --facility-type <value>', 'Facility type', 'Truck')
     .parse(process.argv);
