@@ -21,8 +21,8 @@
     "eslint:fix": "eslint --fix",
     "fresh": "pnpm clean && pnpm install",
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
-    "prettier:check": "prettier *.* **/*.* --check",
-    "prettier:fix": "prettier *.* **/*.* --write",
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write",
     "remark:check": "remark .",
     "remark:fix": "remark . --output",
     "syncpack:fix": "syncpack fix-mismatches && syncpack format"
