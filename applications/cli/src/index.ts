@@ -9,20 +9,23 @@ console.log(figlet.textSync('SF Food Trucks CLI'));
 
 const program = new Command();
 program
-    // Get name, version, and description from package.json properties instead of hard coding.
+    // It would be nice if we imported the package.json as an object so we could use the name
+    // version, and description properties instead of hard coding these values.
     .name('sf-food-trucks-cli')
     .version('1.0.0')
     .description('San Francisco food trucks command-line application.')
     // Search food items for keywords (e.g., 'taco', 'gyro', 'pizza').
     .requiredOption('-f, --food-items [value...]', 'Search food items for keyword')
     // Dataset values for status include 'REQUESTED', 'EXPIRED', 'SUSPEND', or 'APPROVED'.
-    // .option('-s, --status <value>', 'Permit status', 'APPROVED')
     .addOption(
         new Option('-s, --status <value>', 'Permit status')
             .choices(['REQUESTED', 'EXPIRED', 'SUSPEND', 'APPROVED'])
             .default('APPROVED')
     )
     // Dataset values for facility type include 'Push Cart', 'Truck', or ''.
+    // It would be nice if we included handling for those columns in the dataset where the permit
+    // status has no value. I wrote it as an empty string above, but I have not included that in
+    // code.
     .addOption(
         new Option('-t, --facility-type <value>', 'Facility type')
             .choices(['Push Cart', 'Truck'])
@@ -32,6 +35,10 @@ program
 
 const options = program.opts();
 
+// This function streams and parses CSV. This is also where I have included the logic to filter
+// the dataset from the parameters passed to the CLI application. I noticed in the dataset there
+// are multiple entries for the same organization. More time should be spent to understand what if
+// any logic is necessary to handle those cases.
 async function downloadAndParseCsv(url: string): Promise<unknown[]> {
     const response = await axios.get(url, { responseType: 'stream' });
     const parser = response.data.pipe(parse({ columns: true }));
