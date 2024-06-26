@@ -15,7 +15,7 @@ San Francisco food trucks command-line application.
 
 Options:
   -V, --version                output the version number
-  -f, --food-items [value...]  Search food items for keyword
+  -f, --food-items [value...]  Search food items for one or more keywords.
   -s, --status <value>         Permit status (choices: "REQUESTED", "EXPIRED", "SUSPEND", "APPROVED", default: "APPROVED")
   -t, --facility-type <value>  Facility type (choices: "Push Cart", "Truck", default: "Truck")
   -h, --help                   display help for command
