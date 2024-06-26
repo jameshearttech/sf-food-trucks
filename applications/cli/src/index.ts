@@ -15,7 +15,7 @@ program
     .version('1.0.0')
     .description('San Francisco food trucks command-line application.')
     // Search food items for keywords (e.g., 'taco', 'gyro', 'pizza').
-    .requiredOption('-f, --food-items [value...]', 'Search food items for keyword')
+    .requiredOption('-f, --food-items [value...]', 'Search food items for one or more keywords.')
     // Dataset values for status include 'REQUESTED', 'EXPIRED', 'SUSPEND', or 'APPROVED'.
     .addOption(
         new Option('-s, --status <value>', 'Permit status')
