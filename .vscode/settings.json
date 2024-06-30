@@ -8,7 +8,7 @@
   "eslint.codeActionsOnSave.mode": "all",
   "eslint.debug": true,
   "eslint.enable": true,
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
   "eslint.format.enable": false,
   "eslint.run": "onType",
   "eslint.runtime": "/usr/local/bin/node",
