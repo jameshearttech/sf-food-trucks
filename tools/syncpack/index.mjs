@@ -12,20 +12,17 @@ export default {
     ],
     semverGroups: [
         {
+            // Use exact for all because we do not trust anyone to follow semantic versioning.
             range: '',
-            dependencyTypes: ['prod', 'resolutions', 'overrides', 'pnpmOverrides', 'local'],
-            dependencies: ['**'],
-            packages: ['**']
-        },
-        {
-            range: '~',
-            dependencyTypes: ['dev'],
-            dependencies: ['**'],
-            packages: ['**']
-        },
-        {
-            range: '^',
-            dependencyTypes: ['peer'],
+            dependencyTypes: [
+                'dev',
+                'prod',
+                'peer',
+                'resolutions',
+                'overrides',
+                'pnpmOverrides',
+                'local'
+            ],
             dependencies: ['**'],
             packages: ['**']
         }
