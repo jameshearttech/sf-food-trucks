@@ -31,10 +31,10 @@
   "type": "module",
   "main": "index.mjs",
   "devDependencies": {
-    "syncpack": "12.3.2"
+    "syncpack": "12.3.3"
   },
   "peerDependencies": {
-    "syncpack": "12.3.2"
+    "syncpack": "12.3.3"
   },
   "engines": {
     "node": "^22.2.0"
