@@ -32,10 +32,10 @@ Commitlint is typically used in the Git commit-msg hook to lint commits, but the
 
 ```bash
 $ echo 'foo' | pnpm commitlint
-⧗   input: foo
-✖   subject may not be empty [subject-empty]
-✖   type may not be empty [type-empty]
+⧗ input: foo
+✖ subject may not be empty [subject-empty]
+✖ type may not be empty [type-empty]
 
-✖   found 2 problems, 0 warnings
-ⓘ   Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+✖ found 2 problems, 0 warnings
+ⓘ Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
 ```
