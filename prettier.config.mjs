@@ -1,2 +1,2 @@
-import baseConfig from "prettier-config";
+import baseConfig from 'prettier-config';
 export default baseConfig;
