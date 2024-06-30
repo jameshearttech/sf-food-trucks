@@ -1,6 +1,7 @@
 /** @type {import("prettier").Config} */
 
 export default {
+    plugins: ['prettier-plugin-sh'],
     arrowParens: 'avoid',
     printWidth: 100,
     singleQuote: true,
