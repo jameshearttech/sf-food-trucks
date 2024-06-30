@@ -16,16 +16,18 @@
   "scripts": {
     "build": "pnpm tsc",
     "clean": "rimraf \"**/node_modules\"",
-    "commitlint": "commitlint",
-    "eslint:check": "eslint",
-    "eslint:fix": "eslint --fix",
     "fresh": "pnpm clean && pnpm install",
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
     "prettier:check": "prettier . --check",
     "prettier:fix": "prettier . --write",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix",
     "remark:check": "remark .",
     "remark:fix": "remark . --output",
-    "syncpack:fix": "syncpack fix-mismatches && syncpack format"
+    "syncpack:check": "syncpack lint",
+    "syncpack:fix": "syncpack fix-mismatches && syncpack format",
+    "lint:check": "pnpm run prettier:check && pnpm run eslint:check && pnpm run checkstyle:check && pnpm run remark:check && pnpm run syncpack:check",
+    "lint:fix": "pnpm run prettier:fix && pnpm run eslint:fix && pnpm run remark:fix && pnpm run syncpack:fix"
   },
   "type": "commonjs",
   "main": "dist/index.js",
