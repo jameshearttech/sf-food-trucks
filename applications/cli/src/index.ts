@@ -4,6 +4,9 @@ import { Readable } from 'stream';
 import axios from 'axios';
 import { parse } from 'csv-parse';
 
+// SF food truck data URL.
+const url = 'https://data.sfgov.org/api/views/rqzj-sfat/rows.csv';
+
 // Write banner to console.
 console.log(figlet.textSync('SF Food Trucks CLI'));
 
@@ -64,6 +67,6 @@ async function downloadAndParseCsv(url: string): Promise<unknown[]> {
     });
 }
 
-downloadAndParseCsv('https://data.sfgov.org/api/views/rqzj-sfat/rows.csv')
+downloadAndParseCsv(url)
     .then(data => console.log(data))
     .catch(error => console.error(error));
