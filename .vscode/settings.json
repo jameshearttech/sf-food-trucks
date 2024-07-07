@@ -1,5 +1,6 @@
 {
   "commitlint.config.file": "commitlint.config.mjs",
+  "commitlint.globalNodePath": "/usr/local/bin/node",
   "commitlint.log.enabled": true,
   "css.format.enable": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -12,11 +13,7 @@
   "eslint.format.enable": false,
   "eslint.run": "onType",
   "eslint.runtime": "/usr/local/bin/node",
-  "eslint.workingDirectories": [
-    { "pattern": "./applications/*/" },
-    { "pattern": "./libraries/*/" },
-    { "pattern": "./tools/*/" }
-  ],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "files.eol": "\n",
   "html.format.enable": false,
   "javascript.format.enable": false,
@@ -28,6 +25,6 @@
   "remark.requireConfig": true,
   "scss.format.enable": false,
   "typescript.format.enable": false,
-  "typescript.tsserver.log": "normal",
-  "typescript.tsserver.nodePath": "/usr/local/bin/node"
+  "typescript.tsserver.nodePath": "/usr/local/bin/node",
+  "yaml.format.enable": false
 }
