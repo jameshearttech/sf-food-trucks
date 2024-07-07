@@ -10,6 +10,9 @@ export default tseslint.config(
     ...tseslint.configs.recommended,
     eslintConfigPrettier,
     {
+        ignores: ['**/dist/']
+    },
+    {
         files: ['**/test/**'],
         ...eslintPluginJest.configs['flat/recommended']
     },
