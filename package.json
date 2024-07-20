@@ -37,7 +37,7 @@
     "@types/node": "20.14.10",
     "commitlint-config": "workspace:*",
     "conventional-changelog-conventionalcommits": "8.0.0",
-    "eslint": "9.6.0",
+    "eslint": "9.7.0",
     "eslint-config": "workspace:*",
     "husky": "9.0.11",
     "lint-staged": "15.2.7",
