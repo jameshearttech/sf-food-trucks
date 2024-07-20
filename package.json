@@ -47,7 +47,7 @@
     "remark": "15.0.1",
     "remark-cli": "12.0.1",
     "remark-config": "workspace:*",
-    "rimraf": "5.0.8",
+    "rimraf": "6.0.1",
     "syncpack": "12.3.3",
     "syncpack-config": "workspace:*",
     "typescript": "5.4.5"

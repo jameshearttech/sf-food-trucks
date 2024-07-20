@@ -32,7 +32,7 @@
   "main": "index.mjs",
   "devDependencies": {
     "lint-staged": "15.2.7",
-    "rimraf": "5.0.8"
+    "rimraf": "6.0.1"
   },
   "peerDependencies": {
     "lint-staged": "15.2.7"

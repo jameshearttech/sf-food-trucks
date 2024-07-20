@@ -31,7 +31,7 @@
   "type": "module",
   "main": "index.mjs",
   "devDependencies": {
-    "rimraf": "5.0.8",
+    "rimraf": "6.0.1",
     "syncpack": "12.3.3"
   },
   "peerDependencies": {
