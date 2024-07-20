@@ -1,9 +1,16 @@
-FROM node:22.4.0-bookworm-slim
-ENV SHELL="bash" PNPM_VERSION="9.4.0"
-RUN apt-get --quiet --yes update \
-    && apt-get --quiet --yes install --no-install-recommends git ca-certificates curl jq iputils-ping dnsutils netcat-traditional \
-    && apt-get --quiet --yes autoremove \
-    && rm --force --recursive /var/lib/apt/lists/ \
+FROM node:22.4.1-bookworm-slim
+ENV SHELL="bash" PNPM_VERSION="9.5.0"
+RUN apt-get update --quiet --yes \
+    && apt-get install --quiet --yes --no-install-recommends \
+        git \
+        ca-certificates \
+        curl \
+        jq \
+        iputils-ping \
+        dnsutils \
+        netcat-traditional \
+    && apt-get autoremove --quiet --yes \
+    && rm --force --recursive /var/lib/apt/lists/* \
     && corepack enable \
     && corepack prepare pnpm@${PNPM_VERSION} --activate \
     && pnpm setup \
