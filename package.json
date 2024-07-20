@@ -34,7 +34,7 @@
     "@commitlint/lint": "19.2.2",
     "@commitlint/load": "19.2.0",
     "@commitlint/parse": "19.0.3",
-    "@types/node": "20.14.10",
+    "@types/node": "20.14.11",
     "commitlint-config": "workspace:*",
     "conventional-changelog-conventionalcommits": "8.0.0",
     "eslint": "9.7.0",

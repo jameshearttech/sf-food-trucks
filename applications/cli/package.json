@@ -40,7 +40,7 @@
   "devDependencies": {
     "@jest/globals": "29.7.0",
     "@types/figlet": "1.5.8",
-    "@types/node": "20.14.10",
+    "@types/node": "20.14.11",
     "rimraf": "6.0.1",
     "ts-jest": "29.1.5",
     "ts-node": "10.9.2",
